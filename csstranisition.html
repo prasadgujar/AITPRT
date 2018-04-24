@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+.object
+{
+    width: 150px;
+    height: 150px;
+    background: firebrick;
+    transition :  background 0.5s ease-in;
+}
+</style>
+</head>
+<body>
+<div class="object" id="object"></div>
+<button onclick="changeColor('firebrick')">default</button>
+<button onclick="changeColor('red')">Red</button>
+<button onclick="changeColor('blue')">Blue</button>
+<button onclick="changeColor('green')">Green</button>
+<button onclick="changeColor('yellow')">Yellow</button>
+<script>
+    let object = document.getElementById("object");
+
+    function changeColor(color) {
+        object.style.background = color;
+    }
+</script> 
+</body>
+</html>
