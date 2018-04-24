@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>order your noob stuff </h1>
+        <form action="">
+            <div class="input-row">
+                <lable for="product">Product</lable>
+                <input list="product" name="product" required>
+                <datalist>
+                    <option  value = "product1">
+                    <option value = "product2">
+                    <option value = "product3">
+                </datalist>
+            </div>
+            <div class="input-row">
+                <lable for="date">Date</lable>
+                <input type="date" name="date" required min="2001-01-02">
+            </div>
+            <div class="input-row">
+                <lable for="time">Time</lable>
+                <input type="time" name="time" required>
+            </div>
+            <div class="input-row">
+                <label for="emsail">email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="input-row">
+                <label for="quantity">quantity</label>
+                <input type="range" name="quantity" min="0" max="5" required oninput="quantity_op.value = quantity.value">
+                <output name = "quantity_op" id="quantity_op">1</output>
+            </div>
+            <div class="input-row">
+                <label for="quantity2">quantity2</label>
+                <input type="number" name="quantity2" min="1" max="10">
+            </div>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
